@@ -28,30 +28,30 @@ const Home = () => {
         </div>
         <div className={classes.social}>
           <div className={classes.socialGroup}>
-            <div className={classes.socialCard}>
+            <a href='https://www.youtube.com/user/wisdomcsharp/videos' target='_blank' className={classes.socialCard}>
                <div>
                  <Image src={play} width='35' height='35'  />
                </div>
                <span>Building on Blockchain</span>
-            </div>
-            <div className={classes.socialCard}>
+            </a>
+            <a href='https://learn.block6.tech/' target='_blank' className={classes.socialCard}>
                <div>
                <Image src={share} width='35' height='35'  />
                </div>
                <span>BLOCK6 Publication</span>
-            </div>
-            <div className={classes.socialCard}>
+            </a>
+            <a  href='mailto:info@block6.tech' target='_blank'  className={classes.socialCard}>
                <div>
                <Image src={email} width='35' height='35'  />
                </div>
                <span>Submit Press Release</span>
-            </div>
-            <div className={classes.socialCard}>
+            </a>
+            <a href='https://discord.com/invite/5SUs8QTJ8a' target='_blank' className={classes.socialCard}>
                <div>
                <Image src={share} width='35' height='35'  />
                </div>
                <span>Join the community</span>
-            </div>
+            </a>
           </div>
           <a className={classes.chatBtn} href="/">
           <div className={classes.chatBtnIcon}>
