@@ -1,0 +1,51 @@
+.carousel {
+  border-radius: 10px;
+  overflow: hidden;
+  font-size: 0;
+  position: relative;
+}
+
+.carouselBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  overflow: hidden;
+  font-size: 0;
+  padding: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.btnBack {
+  composes: carouselBtn;
+  left: 0;
+}
+
+.btnNext {
+  composes: carouselBtn;
+  right: 0;
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.circles {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #20e7b8;
+  border-radius: 50%;
+  background: transparent;
+}
+
+.circle + .circle {
+  margin-left: 12px;
+}

@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+
+.home {
+    background: #060928;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+
+.homeSomething {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(180deg, #E21EFF 0%, #0285FE 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 80px;
+    line-height: 90%;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    transform: scale(1.5);
+}
+
+.homeSomething span:nth-child(1) {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.homeSomething span:nth-child(2) {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.homeSomething span:nth-child(3) {
+    font-size: 70px;
+    font-weight: 800;
+}
+
+.homeSomething span:nth-child(4) {
+    font-size: 78px;
+    font-weight: 800;
+}
+
+.homeSomething span {
+    text-shadow: 20px 30px 50px rgba(2, 133, 254, 0.25);
+}
+
+.blockChainLine {
+    position: relative;
+    height: 300px;
+    width: 100%;
+}
+
+
+.homeHarmony {
+    text-align: center;
+    text-transform: capitalize;
+    background: linear-gradient(90deg, #BD43C9 5.07%, #0285FE 93.71%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    position: relative;
+}
+
+
+.socialCard {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    margin-top: 28px;
+}
+
+.socialCard::before {
+    content: '';
+    position: absolute;
+    top: -45%;
+    left: 4.5%;
+    height: 30px;
+    width:10px;
+    background: linear-gradient(to right, #18194B
+    50% , #261447 50%); /* Standard syntax */
+    z-index: 1;
+}
+
+
+.socialCard span {
+    letter-spacing: -0.02em;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 54px;
+    color: #E6E6E6;
+}
+
+
+
+.socialCard div  {
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #18194B
+    50% , #261447 50%); /* Standard syntax */
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.socialCard:nth-child(1):after {
+    content: '';
+    position: absolute;
+    top: -130%;
+    left: 4.5%;
+    height: 100px;
+    width:10px;
+    background: linear-gradient(to right, #18194B
+    50% , #261447 50%); /* Standard syntax */
+    z-index: 1;
+}
+
+
+.socialCard:nth-child(4):after {
+    content: '';
+    position: absolute;
+    bottom: -130%;
+    left: 4.5%;
+    height: 100px;
+    width:10px;
+    background: linear-gradient(to right, #18194B
+    50% , #261447 50%); /* Standard syntax */
+    z-index: 1;
+}
+
+
+.chatBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 64px;
+    gap: 5px;
+    background: #0285FE;
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    padding-block: 8px;
+    padding-inline: 20px;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    padding: 10px 30px;
+     margin-right: 50px;
+  }
+
+  .chatBtn:hover {
+    opacity: 0.8;
+  }
+
+  .chatBtnIcon {
+    position: relative;
+    width: 60px;
+    height: 60px;
+  }
+
+  .chatBtn::after {
+    content: '';
+    position: absolute;
+    bottom: -100%;
+    right: -40%;
+    background-image: url('../../../../public/assets/images/svg/arrow-opacity.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 70%;
+    height: 70%;
+    overflow: hidden;
+  }
+
+.social {
+    background: #12133E;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-inline: 5%;
+    height: 64vh;
+}
+
+.socialGroup {
+    margin-top: -30px;
+}
+
+
+@media screen and (max-width: 1100px) {
+    .chatBtn {
+        font-size: 50px;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .social {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .chatBtn {
+        width: 100%;
+        border-radius: 10px;
+        margin-top: 35px;
+        font-size: 24px;
+        margin-bottom: 50px;
+    }
+
+    .socialGroup {
+        margin-top: 0;
+    }
+
+    .socialCard:nth-child(1):after {
+        display: none;
+    }
+    
+    
+    .socialCard:nth-child(4):after {
+        bottom: -55%;
+        left: 7.5%;
+        height: 30px;
+    }
+    
+    .socialCard::before {
+        top: -40%;
+        left: 7.5%;
+    }
+    
+    .chatBtn::after {
+        display: none;
+    }
+
+    .homeSomething span:nth-child(1) {
+        font-size: 16px;
+        font-weight: 600;
+    }
+    
+    .homeSomething span:nth-child(2) {
+        font-size: 22px;
+        font-weight: 600;
+        margin-top: -40px;
+    }
+    
+    .homeSomething span:nth-child(3) {
+        font-size: 30px;
+        font-weight: 600;
+        margin-top: -30px;
+    }
+    
+    .homeSomething span:nth-child(4) {
+        font-size: 38px;
+        font-weight: 700;
+        margin-top: -30px;
+    }
+    
+    .social {
+        height: 100%;
+    }
+
+    .socialCard span {
+        font-size: 24px;
+    }
+
+    .chatBtnIcon {
+        height: 40px;
+        width: 40px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .homeHarmony {
+        background: linear-gradient(180deg, #BB43CD 0%, #0285FE 100%);
+    }
+
+    .homeSomething {
+        padding-bottom: 40px;
+        padding-top: 50px;
+    }
+
+    .homeSomething span:nth-child(1) {
+        font-size: 10px;
+        font-weight: 300;
+    }
+    
+    .homeSomething span:nth-child(2) {
+        font-size: 16px;
+        font-weight: 500;
+        margin-top: -55px;
+    }
+    
+    .homeSomething span:nth-child(3) {
+        font-size: 24px;
+        font-weight: 600;
+        margin-top: -45px;
+    }
+    
+    .homeSomething span:nth-child(4) {
+        font-size: 34px;
+        font-weight: 600;
+        margin-top: -35px;
+    }
+
+    .blockChainLine {
+        height: 200px;
+    }
+
+    .chatBtnIcon {
+        height: 30px;
+        width: 30px;
+    }
+}

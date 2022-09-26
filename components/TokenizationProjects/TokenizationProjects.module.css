@@ -1,0 +1,270 @@
+.tokenizationProjects {
+  background: #040924;
+  color: var(--clr-white-accent);
+  padding: 6.25rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex + .flex {
+  margin-top: 9.375rem;
+}
+
+.flex:nth-child(even) .imageSide {
+  order: -1;
+  margin: 0;
+  margin-right: 2rem;
+}
+
+.contentSide h3 {
+  font-size: 2.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: var(--font-semibold);
+  color: var(--clr-white-primary);
+  line-height: 117%;
+}
+
+.contentSide h3 span {
+  color: var(--clr-accent);
+}
+
+.contentSide > p {
+  line-height: 158.7%;
+}
+
+.specialparagraph {
+  max-width: 65ch;
+}
+
+.contentSide > * + * {
+  margin-top: 2.171rem;
+}
+
+.smallerLine {
+  width: 78%;
+  margin: 0 auto;
+}
+
+.imageSide {
+  font-size: 0;
+  margin-left: 2rem;
+}
+
+.carouselSection {
+  color: var(--clr-white-accent);
+  margin-top: 9.375rem;
+}
+
+.carouselSection h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: var(--font-lg);
+  line-height: 117%;
+}
+
+.carouselSection h3 span {
+  color: var(--clr-accent);
+}
+
+.carouselSection .subtitle {
+  font-size: 1.125rem;
+  line-height: 158%;
+  margin-top: 1.4rem;
+}
+
+.carouselSection .flex {
+  margin-top: 6.25rem;
+}
+
+.carouselSection .flex h4 {
+  font-size: 1.5rem;
+  line-height: 158%;
+}
+
+.carouselSection .flex p {
+  font-size: 1rem;
+  line-height: 158%;
+  margin-top: 2.125rem;
+}
+
+.carouselSection .flex p:last-child {
+  margin-top: 1.5rem;
+}
+
+.green {
+  color: var(--clr-accent);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.carouselBorderGradient {
+  padding: 1px;
+  background: linear-gradient(90deg, #bb43cd, #0285fe);
+  border-radius: 10px;
+  max-width: 570px;
+  width: 100%;
+  flex-shrink: 1.5;
+  position: relative;
+}
+
+.carouselBorderGradient::after {
+  content: "";
+  background: rgba(10, 19, 77, 0);
+  background: linear-gradient(
+    to bottom,
+    rgba(10, 19, 77, 0),
+    rgba(5, 9, 37, 100)
+  );
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 114px;
+  pointer-events: none;
+}
+
+.carouselContent {
+  margin-left: 2rem;
+}
+
+.radialImgDecoration {
+  position: absolute;
+  top: 30%;
+  right: -50px;
+}
+
+.circleImgDecoration {
+  position: absolute;
+  top: -70px;
+  left: -170px;
+}
+
+.carouselHandlerParagraph span {
+  display: inline-block;
+  padding: 1px 2px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.carouselHandlerParagraph span:hover {
+  border-color: #ff50ed;
+}
+
+.carouselHandlerParagraph span.purple {
+  color: #ff50ed;
+  font-weight: 700;
+}
+
+.carouselHandlerParagraph span.purple:hover {
+  border-color: transparent;
+}
+
+@media (max-width: 750px) {
+  .flex {
+    flex-direction: column;
+  }
+
+  .contentSide h3 {
+    text-align: center;
+  }
+
+  .imageSide.imageSide {
+    margin: 0 !important;
+    margin-top: 2.5rem !important;
+    order: 2 !important;
+  }
+
+  .carouselContent {
+    margin-left: 0;
+    margin-top: 2.125rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .tokenizationProjects {
+    padding: 2.5rem 0;
+  }
+
+  .flex + .flex {
+    margin-top: 2.5rem;
+  }
+
+  .contentSide {
+    align-self: start;
+  }
+
+  .contentSide h3 {
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .imageSide {
+    width: 80%;
+  }
+
+  .smallerLine {
+    width: 100%;
+  }
+
+  .smallerLine .contentSide {
+    align-self: start;
+  }
+
+  .smallerLine .imageSide {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contentSide p {
+    font-size: var(--font-sm);
+    margin-top: 1rem;
+  }
+
+  .carouselSection {
+    margin-top: 3.306rem;
+  }
+
+  .carouselSection h3 {
+    font-size: 1.25rem;
+  }
+
+  .carouselSection .subtitle {
+    font-size: var(--font-sm);
+  }
+
+  .carouselSection .flex {
+    margin-top: 1.25rem;
+  }
+
+  .carouselSection .flex p {
+    font-size: var(--font-sm);
+  }
+
+  .carouselSection .flex h4 {
+    font-size: 20px;
+    margin-bottom: 1.875rem;
+  }
+
+  .carouselSection .flex p {
+    margin: 0;
+  }
+
+  .carouselSection .flex p + p {
+    margin-top: 1.25rem;
+  }
+
+  .radialImgDecoration {
+    top: 0;
+    right: -15px;
+  }
+
+  .circleImgDecoration {
+    top: -21px;
+    left: -50px;
+  }
+}

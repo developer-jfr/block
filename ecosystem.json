@@ -1,0 +1,25 @@
+{
+    "apps": [
+        {
+            "name": "BLOCK6",
+            "script": "npm",
+            "args": "run start",
+            "env_production": {
+                "NODE_ENV": "production"
+            }
+        }
+    ],
+    "deploy": {
+        "production": {
+            "user": "ghost-user",
+            "host": [
+                "134.122.111.36"
+            ],
+            "ref": "origin/main",
+            "repo": "git@github.com:wisdomcsharp/block6.git",
+            "path": "/var/workspace/block6",
+            "key": "~/Desktop/clearplastic.pem",
+            "post-deploy": "npm install && pm2 reload ecosystem.json --env production"
+        }
+    }
+}
