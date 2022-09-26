@@ -87,7 +87,7 @@
     content: '';
     position: absolute;
     top: -45%;
-    left: 4.5%;
+    left: 5.5%;
     height: 30px;
     width:10px;
     background: linear-gradient(to right, #18194B
@@ -123,7 +123,7 @@
     content: '';
     position: absolute;
     top: -130%;
-    left: 4.5%;
+    left: 5.5%;
     height: 100px;
     width:10px;
     background: linear-gradient(to right, #18194B
@@ -136,7 +136,7 @@
     content: '';
     position: absolute;
     bottom: -130%;
-    left: 4.5%;
+    left: 5.5%;
     height: 100px;
     width:10px;
     background: linear-gradient(to right, #18194B
@@ -240,8 +240,9 @@
     }
     
     .socialCard::before {
-        top: -40%;
+        top: -60%;
         left: 7.5%;
+        height: 50px;
     }
     
     .chatBtn::after {
@@ -282,6 +283,10 @@
     .chatBtnIcon {
         height: 40px;
         width: 40px;
+    }
+
+    .socialCard {
+        margin-top: 38px;
     }
 }
 
@@ -327,4 +332,6 @@
         height: 30px;
         width: 30px;
     }
+
+    
 }
